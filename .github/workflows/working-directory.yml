@@ -1,0 +1,8 @@
+name: working-directory behaviour test
+on: [workflow_dispatch]
+jobs:
+  working-directory:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello after working directory that does not exist"
+        working-directory: does-not-exist
